@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golfredo Flores - Web developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1819bff6d7.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.1/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+    <div class="hamburger-icon" id="hamb-icon">
+        <div class="icon-1" id="a"></div>
+        <div class="icon-2" id="b"></div>
+        <div class="icon-3" id="c"></div>
+        <div class="clear"></div>
+    </div>
+
+    <nav id="nav">          
+        <ul id="menu">
+          <li><a href="#home" class="close">home</a></li>
+          <li><a href="#about-me" class="close">About me</a></li>
+          <li><a href="#what-i-do" class="close">What i do</a></li>
+          <li><a href="#portfolio" class="close">Portfolio</a></li>
+          <li><a href="#contact" class="close">Contact</a></li>
+        </ul>  
+    </nav>
+
+    <div class="dark-green" id="dgreen"></div>
+
+</head>
+<body>
+
+    <section class="banner" id="home">
+        <div class="container parallax-wrapper">
+            <h1>Hello! i'm Golfredo</h1>
+            <h3>I'm a <span class="auto-type"></span></h3>
+            <!--
+            <img src="img/poly1b.png" class="polygon1 rellax" data-rellax-speed="4" data-rellax-percentage="0.5">
+            <img src="img/poly2b.png" class="polygon2 rellax"  data-rellax-speed="-2" data-rellax-percentage="0.5">
+            -->
+        </div>
+        <div class="scrolldown-wrapper">
+            <div class="scrolldown">
+                <svg height="30" width="10">
+                    <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+                    <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+                </svg>
+            </div>
+        </div>
+        
+    </section>
+    <section class="about" id="about-me">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 parallax-wrapper">
+                    <h2 data-scroll>About me</h2>
+                    <p data-scroll>I'm a web developer specialized in
+                        Front-end with over 4 years of
+                        experience. Able to tackle any
+                        stage in the lifecycle of web related
+                        projects development.<br><br>
+                        Always up to quickly learn new
+                        technologies and constantly
+                        looking for new challenges.</p>
+                        <!--
+                        <img src="img/poly1a.png" class="polygon3 rellax" data-rellax-speed="2" data-rellax-percentage="0.5">
+                        <img src="img/poly3a.png" class="polygon4 rellax"  data-rellax-speed="-2" data-rellax-percentage="0.5">
+                        -->
+                </div>
+                
+                <div class="col-md-6 center parallax-wrapper">
+                    <img src="img/face-img.png" class="profile-photo" data-scroll>
+                    <!--
+                    <img src="img/poly4a.png" class="polygon5 rellax"  data-rellax-speed="-2" data-rellax-percentage="0.5">
+                    <img src="img/poly2a.png" class="polygon6 rellax"  data-rellax-speed="4" data-rellax-percentage="0.5">
+                    -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="what-do" id="what-i-do">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 typed-text center">
+                    <img src="img/letters.png" class="letters1 rellax" data-rellax-speed="4" data-rellax-percentage="0.5">
+                </div>
+                <div class="col-md-6">
+                    <h2 data-scroll>What i do</h2>
+                    <p data-scroll>Build, troubleshooting and maintenance of Wordpress websites
+                        in fields as e-commerce portals, business websites, personal
+                        blogs, portfolios and landing pages through development of
+                        custom themes from scratch or prebuilt themes customization,
+                        as well as integrations with 3rd party plugins and services.
+                        <br><br>
+                        Server and hosting environment configuration, maintenance and administration.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 center">
+                    <h2 data-scroll>Portfolio</h2>
+                    <div class="portfolio-list">
+                        <div class="portfolio-item">
+                            <img src="img/portfolio-2.png" alt="">
+                            <div class="portfolio-layer">
+                                <h3>Website: Augmented reality app project</h3>
+                                <p>Development and publishing of a Wordpress website 
+                                    with a custom theme as part of my Final Project 
+                                    to obtain the Systems Engineering degree.</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/portfolio-2.png" alt="">
+                            <div class="portfolio-layer">
+                                <h3>Website: Augmented reality app project</h3>
+                                <p>Development and publishing of a Wordpress website 
+                                    with a custom theme as part of my Final Project 
+                                    to obtain the Systems Engineering degree.</p>
+                                <a href="https://meridasmartapp.000webhostapp.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/portfolio-3.png" alt="">
+                            <div class="portfolio-layer">
+                                <h3>Website: Farm animals food company</h3>
+                                <p>Development and publishing of a Wordpress website with a custom theme 
+                                    according to the provided design and information by the client.</p>
+                                <a href="https://abanutrier.com" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/portfolio-4.png" alt="">
+                            <div class="portfolio-layer">
+                                <h3>Website: Industrial supplies company</h3>
+                                <p>Development and publishing of a Wordpress website with a custom theme 
+                                    according to the provided design and information by the client.</p>
+                                <a href="http://www.logisticajd.com" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/portfolio-5.png" alt="">
+                            <div class="portfolio-layer">
+                                <h3>Website: Industrial supplies company</h3>
+                                <p>Development and publishing of a Wordpress website with a custom theme 
+                                    according to the provided design and information by the client.</p>
+                                <a href="https://www.voso.ca" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/portfolio-6.png" alt="">
+                            <div class="portfolio-layer">
+                                <h3>Website: Dance company</h3>
+                                <p>Development and publishing of a Wordpress website with custom-made theme and templates, custom post types 
+                                    and a dance courses packages sales system through Woocommerce platform. According to the provided design and 
+                                    information by the client.</p>
+                                <a href="https://507dancecamp.net" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 center" data-scroll>
+                    <h2>Contact</h2>
+                </div>
+                <div class="col-md-12 center" data-scroll>
+                    <a class="btn" href="#" role="button"><i class="fa-solid fa-mobile-screen"></i></a>
+                    <a class="btn" href="#" role="button"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="btn" href="#" role="button"><i class="fa-brands fa-linkedin"></i></a>
+                </div>    
+            </div>
+        </div>
+        <img src="img/letters2.png" class="letters2 rellax" data-rellax-speed="4" data-rellax-percentage="0.5">
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
