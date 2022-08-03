@@ -262,6 +262,11 @@ nav.show {
     z-index: 120;
 }
 
+.banner-title span{
+    font-family: "Univers Black";
+    color: #46967E;
+}
+
 .banner h3{
     position: relative;
     z-index: 120;
@@ -328,15 +333,6 @@ nav.show {
     z-index: 120;
 }
 
-.polygon2 {
-    position: absolute;
-    right: 20px;
-    top: -20px;
-    max-width: 80vw;
-    height: auto;
-    z-index: 0;
-}
-
 /* About section */
 
 .about{
@@ -362,42 +358,6 @@ nav.show {
     position: relative;
     z-index: 100;
 }
-
-.polygon3 {
-    position: absolute;
-    left: 0px;
-    bottom: -100px;
-    max-width: 60vw;
-    height: auto;
-    z-index: 0;
-}
-
-.polygon4 {
-    position: absolute;
-    right: -80px;
-    top: -100px;
-    max-width: 40vw;
-    height: auto;
-    z-index: 0;
-}
-.polygon5 {
-    position: absolute;
-    left: 18%;
-    bottom: 20%;
-    max-width: 60vw;
-    height: auto;
-    z-index: 0;
-}
-
-.polygon6 {
-    position: absolute;
-    right: 16px;
-    top: -5px;
-    max-width: 40vw;
-    height: auto;
-    z-index: 0;
-}
-
 
 
 .profile-photo{
@@ -426,6 +386,14 @@ nav.show {
     text-align: justify;
     position: relative;
     z-index: 120;
+}
+
+.skills{
+    display: block;
+}
+
+.skills-sm{
+    display: none;
 }
 
 .letters1 {
@@ -469,7 +437,7 @@ user-select: none;
     opacity: 0;
   }
 
-  .portfolio{
+.portfolio{
     width: 100%;
     min-height: 100vh;
     background: #3D554D;
@@ -479,6 +447,10 @@ user-select: none;
     align-items: center;
     justify-content: center;
     padding: 30px;
+}
+
+.portfolio-inner{
+    margin: 60px 0;
 }
 
 .portfolio h2{
@@ -538,6 +510,10 @@ user-select: none;
     margin-bottom: 15px;
 }
 
+.portfolio-layer p{
+    margin-bottom: 10px;
+}
+
 .portfolio-layer a{
     color: #46967E;
     text-decoration: none;
@@ -575,6 +551,11 @@ user-select: none;
     padding: 30px;
 }
 
+.contact-data{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .contact a{
     color: #46967E;
     background-color:#383535;
@@ -587,7 +568,7 @@ user-select: none;
 	text-align: center;
 }
 
-.contact a:hover{
+.contact a:hover, .contact a:active{
     color: #fff;
     background-color: #46967E;
 }
@@ -602,13 +583,34 @@ user-select: none;
 }
 
 
+@media screen and (max-width: 575px){
 
-@media (max-width: 700px){
-.work__blocks {
-    column-count: 1;
-    margin-bottom: 35px;
+    h1{
+        font-size: 3.5em !important;
+    }
+
+    h2{
+        font-size: 3em !important;
+    }
+    h3 {
+        font-size: 2em !important;
+    }
+
+    .skills{
+        display: none;
+    }
+    
+    .skills-sm{
+        min-height: 20vh;
+        display: block;
+    }
+
+    .letters1 {
+        position: absolute;
+        left: 5%;
+        top: 260%;
+        max-width: 85%;
+        height: auto;
+        z-index: 0;
+    }
 }
-}
-
-
-
