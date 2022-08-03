@@ -359,6 +359,13 @@ nav.show {
     z-index: 100;
 }
 
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+}
 
 .profile-photo{
     max-width: 50%;
@@ -399,8 +406,8 @@ nav.show {
 .letters1 {
     position: absolute;
     left: 8%;
-    top: 240%;
-    max-width: 65%;
+    top: 10%;
+    max-width: 100%;
     height: auto;
     z-index: 0;
 }
@@ -552,8 +559,8 @@ user-select: none;
 }
 
 .contact-data{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
 }
 
 .contact a{
@@ -608,7 +615,7 @@ user-select: none;
     .letters1 {
         position: absolute;
         left: 5%;
-        top: 260%;
+        top: 15%;
         max-width: 85%;
         height: auto;
         z-index: 0;
