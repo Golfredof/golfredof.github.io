@@ -558,9 +558,13 @@ user-select: none;
     padding: 30px;
 }
 
-.contact-data{
+.contact-buttons{
     margin-top: 50px !important;
     margin-bottom: 50px !important;
+}
+
+.contact-data{
+    z-index: 100 !important;
 }
 
 .contact a{
@@ -616,6 +620,19 @@ user-select: none;
         display: none;
     }
 
+    .contact{
+        z-index: 100;
+    }
+
+    .contact a{
+        width: 60px;
+        height: 60px;
+        margin: 0px 14px;
+        padding: 12px 14px;
+        border-radius: 60px;
+        font-size: 24px;
+    }
+
     .letters1b {
         display: block !important;
         position: absolute;
@@ -628,5 +645,6 @@ user-select: none;
 
     .letters2{
         max-height: 70% !important;
+        z-index: 0;
     }
 }
