@@ -399,17 +399,17 @@ nav.show {
     display: block;
 }
 
-.skills-sm{
-    display: none;
-}
-
 .letters1 {
     position: absolute;
     left: 8%;
-    top: 10%;
+    top: 15%;
     max-width: 100%;
     height: auto;
     z-index: 0;
+}
+
+.letters1b {
+    display: none;
 }
 
 
@@ -613,11 +613,20 @@ user-select: none;
     }
 
     .letters1 {
+        display: none;
+    }
+
+    .letters1b {
+        display: block !important;
         position: absolute;
-        left: 5%;
-        top: 15%;
-        max-width: 85%;
-        height: auto;
+        right: 50px;
+        bottom: 100px !important;
+        max-height: 55%;
+        width: auto !important;
         z-index: 0;
+    }
+
+    .letters2{
+        max-height: 55% !important;
     }
 }
