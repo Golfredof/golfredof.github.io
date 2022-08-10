@@ -638,7 +638,7 @@ user-select: none;
     .letters1b {
         display: block !important;
         position: absolute;
-        right: 50px;
+        right: 30px;
         bottom: 50px !important;
         max-height: 70%;
         width: auto !important;
