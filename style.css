@@ -759,7 +759,7 @@ user-select: none;
     .polygon2, 
     .polygon3, 
     .polygon4{
-        max-width: 350px;
+        max-width: 250px;
     }
 
     .polygon1{
@@ -784,6 +784,11 @@ user-select: none;
     .banner-text, .banner-img-group {
         text-align: center;
         margin-top: -10vh !important;
+    }
+
+    .center-column {
+        margin-top: 20%!important;
+        margin-bottom: -10% !important;
     }
 
     .center-button{
