@@ -152,6 +152,7 @@ nav {
     flex-direction: column; 
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
 
 }
 
@@ -536,7 +537,7 @@ user-select: none;
 }
 
 .portfolio-title{
-    margin-top: 60px;
+    margin-top: 5%;
 }
 
 .portfolio p{
@@ -753,6 +754,14 @@ user-select: none;
         font-size: 2em !important;
     }
 
+    .about h2{
+        margin-top: 25%;
+    }
+
+    .about p{
+        margin-bottom: -5%;
+    }
+
     .banner-img, 
     .contact-img, 
     .polygon1, 
@@ -772,23 +781,18 @@ user-select: none;
     }
 
     .polygon3{
-        right: 0%;
-        bottom: 25%;
+        right: 45%;
+        bottom: 30%;
     }
 
     .polygon4{
-        right: 35%;
-        bottom: 25%;
+        right: 65%;
+        bottom: 35%;
     }
 
     .banner-text, .banner-img-group {
         text-align: center;
         margin-top: -10vh !important;
-    }
-
-    .center-column {
-        margin-top: 20%!important;
-        margin-bottom: -10% !important;
     }
 
     .center-button{
@@ -827,12 +831,16 @@ user-select: none;
         margin-bottom: 20px;
     }
 
+    .contact-img{
+        right: 50%;
+    }
+
     .letters1b {
         display: block !important;
         position: absolute;
-        right: 30px;
-        bottom: 50px !important;
-        max-height: 70%;
+        right: 0;
+        bottom: -70px !important;
+        max-height: 100%;
         width: auto !important;
         z-index: 0;
     }
