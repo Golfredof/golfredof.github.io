@@ -741,7 +741,7 @@ user-select: none;
     fill: #3D554D;
 }
 
-@media screen and (max-width: 767px) and (max-height: 645px) {
+@media only screen and (max-height: 575px) and (orientation: landscape){
 
     .banner, .about, .what-do, .portfolio, .contact{
         min-height: 150vh;
