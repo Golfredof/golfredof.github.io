@@ -744,11 +744,11 @@ user-select: none;
 @media only screen and (max-height: 575px) and (orientation: landscape){
 
     .banner, .about, .what-do, .portfolio, .contact{
-        min-height: 150vh;
+        min-height: 180vh;
     }
 
     .scrolldown-wrapper{
-        bottom: -45%;
+        bottom: -60%;
     }
 
     .portfolio-list{
@@ -808,7 +808,12 @@ user-select: none;
         bottom: 35%;
     }
 
-    .banner-text, .banner-img-group {
+    .banner-img-group {
+        text-align: center;
+        margin-top: -20vh !important;
+    }
+
+    .banner-text{
         text-align: center;
         margin-top: -15vh !important;
     }
@@ -843,6 +848,10 @@ user-select: none;
         flex-direction: column;
         align-content: center;
         align-items: center;
+    }
+
+    .contact h2{
+        margin-top: 20px;
     }
 
     .contact a{
