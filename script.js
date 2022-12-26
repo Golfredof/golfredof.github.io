@@ -74,7 +74,7 @@ var typed = new Typed(".auto-type", {
 
 // Parallax banner
 
-
+gsap.registerPlugin(ScrollTrigger);
 const paths = [...document.querySelectorAll('path.path-anim')];
 paths.forEach(el => {
     const svgEl = el.closest('svg');

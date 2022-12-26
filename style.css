@@ -27,7 +27,7 @@ body {
     min-height: 100vh;
     max-width: 100%;
     margin: 0 auto;
-    overflow-x: hidden;  
+    overflow-x: hidden !important;  
 }
 
 
@@ -244,9 +244,9 @@ nav.show {
     color: #fff;
     display: flex;
     flex-direction: column; 
-    align-items: center;
+    align-items: left;
     justify-content: center;
-    text-align: center;
+    text-align: left;
 }
 
 .background-banner {
@@ -274,6 +274,58 @@ nav.show {
 
 .typed-cursor {
     color:#46967E;
+}
+
+.main-button {
+
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 50px;
+    background: #46967E;
+    width: auto;
+    height: 25px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px 20px;
+    margin-right: 15px;
+    position: relative;
+    z-index: 120;
+    transition: 1s linear 0.5s;
+    
+}
+
+.main-button:hover{
+    color: #46967E;
+    background-color: #3D554D;
+    font-weight: 600;
+
+}
+
+.main-link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 50px;
+    width: auto;
+    height: 25px;
+    position: relative;
+    z-index: 120 !important;
+}
+
+.main-link:hover{
+    color: #46967E;
+    font-weight: 600;
+
+}
+
+.main-button i, .main-link i{
+    font-size: 16px;
+}
+
+.banner-img{
+    max-width: 400px;
+    pointer-events: none;
 }
 
 /* Scroll Down icon*/
@@ -324,14 +376,27 @@ nav.show {
 
 /* Parallax banner */
 
+
 .polygon1 {
     position: absolute;
-    left: 20px;
-    bottom: 10px;
-    max-width: 80vw;
+    left: -10%;
+    top: 0%;
+    max-width: 400px;
     height: auto;
-    z-index: 120;
+    z-index: 100;
+    pointer-events: none;
 }
+
+.polygon2 {
+    position: absolute;
+    right: -20%;
+    bottom: 10%;
+    max-width: 400px;
+    height: auto;
+    z-index: 100;
+    pointer-events: none;
+}
+
 
 /* About section */
 
@@ -356,7 +421,12 @@ nav.show {
 .about p{
     text-align: justify;
     position: relative;
-    z-index: 100;
+    z-index: 120;
+}
+
+.center-column{
+    margin-top: auto !important;
+    margin-bottom: auto !important;
 }
 
 .profile{
@@ -364,12 +434,12 @@ nav.show {
     align-items: center;
     justify-content: center;
     align-content: center;
+    z-index: 120;
 
 }
 
 .profile-photo{
-    max-width: 50%;
-    height: auto;
+    z-index: 120;
 }
 
 .what-do{
@@ -402,7 +472,7 @@ nav.show {
 .letters1 {
     position: absolute;
     left: 8%;
-    top: 15%;
+    top: 20%;
     max-width: 100%;
     height: auto;
     z-index: 0;
@@ -419,7 +489,7 @@ nav.show {
 }
 
 .selectDisable {
-    -webkit-user-select: none;
+-webkit-user-select: none;
 -khtml-user-select: none;
 -moz-user-select: none;
 -o-user-select: none;
@@ -483,9 +553,12 @@ user-select: none;
 }
 
 .portfolio-item{
-    border-radius: 10px;
+    border-radius: 50px;
     position: relative;
     overflow: hidden;
+    -webkit-box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.25);
+    box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.25);
 }
 
 
@@ -531,10 +604,11 @@ user-select: none;
     font-size: 16px;
     line-height: 40px;
     background: #383535;
-    width: 40px;
+    width: auto;
     height: 40px;
     border-radius: 50%;
     text-align: center;
+    padding: 0 13px;
 }
 
 .portfolio-layer a:hover{
@@ -551,7 +625,7 @@ user-select: none;
 
 .contact{
     width: 100%;
-    min-height: 100vh;
+    min-height: 92vh;
     background: #fff;
     color: #383535;
     position: relative;
@@ -568,7 +642,7 @@ user-select: none;
 }
 
 .contact-data{
-    z-index: 100 !important;
+    z-index: 120 !important;
 }
 
 .contact a{
@@ -588,13 +662,56 @@ user-select: none;
     background-color: #46967E;
 }
 
+.contact-img{
+    max-width: 400px;
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+}
+
+.polygon3 {
+    position: absolute;
+    right: 12%;
+    bottom: 20%;
+    max-width: 400px;
+    height: auto;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.polygon4 {
+    position: absolute;
+    right: 40%;
+    bottom: 15%;
+    max-width: 400px;
+    height: auto;
+    z-index: 100;
+    pointer-events: none;
+}
+
 .letters2 {
     position: absolute;
     right: 30px;
-    bottom: 50px;
+    bottom: 20px;
     max-height: 80%;
     width: auto;
-    z-index: 0;
+    z-index: 100 !important;
+}
+
+.footer-bg{
+    background-color: #383535;
+    height: 7vh;
+    padding-top: 2vh;
+}
+
+.footer-bg p{
+    color: #fff;
+}
+
+.footer-bg a{
+    color: #46967E !important;
+    text-decoration: none;
 }
 
 /****** Separators ******/
@@ -604,7 +721,7 @@ user-select: none;
 	z-index: 600;
 	pointer-events: none;
 	width: 100%;
-	height: 20vh;
+	height: 15vh;
 }
 
 .separator-1{
@@ -634,6 +751,47 @@ user-select: none;
     }
     h3 {
         font-size: 2em !important;
+    }
+
+    .banner-img, 
+    .contact-img, 
+    .polygon1, 
+    .polygon2, 
+    .polygon3, 
+    .polygon4{
+        max-width: 350px;
+    }
+
+    .polygon1{
+        left: -5%;
+    }
+
+    .polygon2{
+        right: 5%;
+        bottom: -10%;
+    }
+
+    .polygon3{
+        right: 0%;
+        bottom: 25%;
+    }
+
+    .polygon4{
+        right: 35%;
+        bottom: 25%;
+    }
+
+    .banner-text, .banner-img-group {
+        text-align: center;
+        margin-top: -10vh !important;
+    }
+
+    .center-button{
+        text-align: center;
+    }
+
+    .portfolio-layer h3 {
+        font-size: 16px !important;
     }
 
     .skills{
@@ -678,4 +836,9 @@ user-select: none;
         max-height: 70% !important;
         z-index: 0;
     }
+
+    .separator{
+        height: 10vh;
+    }
+
 }

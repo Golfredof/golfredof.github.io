@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golfredo Flores - Web developer</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+    <link rel="manifest" href="img/icons/site.webmanifest">
+    <link rel="mask-icon" href="img/icons/safari-pinned-tab.svg" color="#46967e">
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#383535">
+    <meta name="msapplication-config" content="img/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/1819bff6d7.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.1/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
@@ -28,7 +36,7 @@
           <li><a href="#home" class="close">home</a></li>
           <li><a href="#about-me" class="close">About me</a></li>
           <li><a href="#what-i-do" class="close">What i do</a></li>
-          <li><a href="#portfolio" class="close">Portfolio</a></li>
+          <li><a href="#projects" class="close">Projects</a></li>
           <li><a href="#contact" class="close">Contact</a></li>
         </ul>  
     </nav>
@@ -39,13 +47,20 @@
 <body>
 
     <section class="banner" id="home">
-        <div class="container parallax-wrapper">
-            <h1 class="banner-title">Hello! i'm <span>Golfredo</span></h1>
-            <h3>I'm a <span class="auto-type"></span></h3>
-            <!--
-            <img src="img/poly1b.png" class="polygon1 rellax" data-rellax-speed="4" data-rellax-percentage="0.5">
-            <img src="img/poly2b.png" class="polygon2 rellax"  data-rellax-speed="-2" data-rellax-percentage="0.5">
-            -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 center-column center parallax-wrapper banner-img-group">
+                    <img src="img/polygon1.png" class="rellax polygon1" data-rellax-speed="-3" data-rellax-percentage="0.5">
+                    <img src="img/lowpoly-face.png" class="rellax banner-img" data-rellax-speed="-2" data-rellax-percentage="0.5">
+                    <img src="img/polygon2.png" class="rellax polygon2" data-rellax-speed="1" data-rellax-percentage="0.5">
+                </div>
+                <div class="col-md-8 center-column banner-text">
+                    <h1 class="banner-title" data-scroll>Hello! i'm <span>Golfredo</span></h1>
+                    <h3 data-scroll>I'm a <span class="auto-type"></span></h3>
+                    <a href="#projects" class="main-button" data-scroll>My work <i class="fa-solid fa-code"></i></a> 
+                    <a href="#contact" class="main-link" data-scroll>Contact me <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
         </div>
         <div class="scrolldown-wrapper">
             <div class="scrolldown">
@@ -55,10 +70,11 @@
                 </svg>
             </div>
         </div>
+        
     </section>
-    <svg class="separator separator--up separator-1" width="100%" height="100%" viewBox="0 0 100 10" preserveAspectRatio="none">
+    <svg class="separator separator-1" width="100%" height="100%" viewBox="0 0 100 10" preserveAspectRatio="none">
         <path 
-            class="separator__path path-anim" 
+            class="path-anim" 
             d="M 0 0 C 40 0 60 0 100 0 L 0 0 Z" 
             data-path-to="M 0 0 C 40 10 60 10 100 0 L 0 0 Z" 
             vector-effect="non-scaling-stroke" 
@@ -67,7 +83,7 @@
     <section class="about" id="about-me">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 parallax-wrapper">
+                <div class="col-md-6 center-column">
                     <h2 data-scroll>About me</h2>
                     <p data-scroll>I'm a web developer specialized in
                         Front-end with over 4 years of
@@ -76,38 +92,47 @@
                         projects development.<br><br>
                         Always up to quickly learn new
                         technologies and constantly
-                        looking for new challenges.</p>
-                        <!--
-                        <img src="img/poly1a.png" class="polygon3 rellax" data-rellax-speed="2" data-rellax-percentage="0.5">
-                        <img src="img/poly3a.png" class="polygon4 rellax"  data-rellax-speed="-2" data-rellax-percentage="0.5">
-                        -->
+                        looking for new challenges.
+                    </p>
                 </div>
                 
-                <div class="col-md-6 center profile">
-                    <img src="img/face-img.png" class="profile-photo" data-scroll>
-                    <!--
-                    <img src="img/poly4a.png" class="polygon5 rellax"  data-rellax-speed="-2" data-rellax-percentage="0.5">
-                    <img src="img/poly2a.png" class="polygon6 rellax"  data-rellax-speed="4" data-rellax-percentage="0.5">
-                    -->
+                <div class="col-md-6 center profile parallax-wrapper">
+                    <svg class="profile-photo" width="400px" height="350px" viewBox="30 0 550 550">
+                        <defs>
+                            <clipPath id="shape1">
+                                <path 
+                                    class="path-anim" 
+                                    data-path-to="M422.248 192.542c44.2 49.2 94.8 86.9 111.3 141.1 16.5 54.2-1.1 124.9-45.3 161.8-44.2 36.8-114.9 39.7-167.9 22.1-53.1-17.7-88.4-56-137.1-92.9-48.6-36.8-110.6-72.1-121.2-118.1-10.6-46 30.1-102.5 78.8-151.7 48.7-49.2 105.2-90.9 152.4-81.5 47.1 9.4 84.8 70 129 119.2" d="M494.246 145.646c25 39 10.2 103.8-1.2 157.2-11.4 53.4-19.5 95.3-44.5 129.3-25 34-66.9 60.1-120.6 71.7-53.6 11.7-118.9 9-163.7-25-44.8-34-69.2-99.3-71.9-167.3-2.7-68 16.2-138.7 61-177.7 44.9-39 115.6-46.3 183.4-43.4 67.7 3 132.5 16.2 157.5 55.2">
+                                </path> 
+                            </clipPath>
+                        </defs>
+                        <image 
+                            clip-path="url(#shape1)" 
+                            xlink:href="img/face-img-sqr.png" 
+                            x="60" y="75" 
+                            width="480" 
+                            height="460"
+                        />
+                    </svg>
                 </div>
             </div>
         </div>
     </section>
-    <svg class="separator separator--up separator-2" width="100%" height="100%" viewBox="0 0 100 10" preserveAspectRatio="none"> 
+    <svg class="separator separator-2" width="100%" height="100%" viewBox="0 0 100 10" preserveAspectRatio="none"> 
         <path 
-            class="path-anim separator__path" 
+            class="path-anim" 
             data-path-to="M 0 0 C 35 21 70 0 100 0 L 0 0 Z" 
             vector-effect="non-scaling-stroke" 
-            d="M 0 0 C 40 0 60 0 100 0 L 0 0 Z">
+            d="M 0 0 C 38.7786 5.1297 62.4427 0 100 0 L 0 0 Z">
         </path>
     </svg>
-    <section class="what-do parallax-wrapper" id="what-i-do">
-        <div class="container">
+    <section class="what-do" id="what-i-do">
+        <div class="container parallax-wrapper">
             <div class="row">
                 <div class="col-md-6 skills parallax-wrapper center">
-                    <img src="img/letters.png" class="letters1 rellax" data-rellax-speed="4" data-rellax-percentage="0.5">
+                    <img src="img/letters.png" class="letters1 rellax" data-rellax-speed="2" data-rellax-percentage="0.5">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 .center-column">
                     <h2 data-scroll>What i do</h2>
                     <p data-scroll>Build, troubleshooting and maintenance of Wordpress websites
                         in fields as e-commerce portals, business websites, personal
@@ -117,24 +142,27 @@
                         <br><br>
                         Server and hosting environment configuration, maintenance and administration.
                     </p>
+                    <div class="center-button">
+                        <a href="./docs/Golfredo-Flores-CV.pdf" target="_blank" class="main-button" data-scroll>Download CV (PDF) <i class="fa-solid fa-download"></i></a>
+                    </div>
                 </div>
-                <img src="img/lettersb.png" class="letters1b rellax" data-rellax-speed="4" data-rellax-percentage="0.5">
+                <img src="img/lettersb.png" class="letters1b rellax" data-rellax-speed="2" data-rellax-percentage="0.5">
             </div>
         </div>
     </section>
-    <svg class="separator separator--up separator-3" width="100%" height="100%" viewBox="0 0 100 10" preserveAspectRatio="none"> 
+    <svg class="separator separator-3" width="100%" height="100%" viewBox="0 0 100 10" preserveAspectRatio="none"> 
         <path 
-            class="path-anim separator__path"
-            d="M 0 0 C 40 0 60 0 100 0 L 0 0 Z" 
-            data-path-to="M 0 0 C 71 1 86 23 100 0 L 0 0 Z" 
+            class="path-anim"
+            d="M 0 0 C 45.1063 0.1647 64.2828 3.7886 100 0 L 0 0 Z" 
+            data-path-to="M 0 0 C 66 5 69 18 100 0 L 0 0 Z" 
             vector-effect="non-scaling-stroke" >
         </path>
     </svg>
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio" id="projects">
         <div class="container portfolio-inner">
             <div class="row">
-                <div class="col-md-12 center">
-                    <h2 class="portfolio-title" data-scroll>Portfolio</h2>
+                <div class="col-md-12">
+                    <h2 class="portfolio-title" data-scroll>Projects</h2>
                     <div class="portfolio-list">
                         <div class="portfolio-item">
                             <img src="img/portfolio-2.png" alt="">
@@ -146,6 +174,7 @@
                                 <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
                         </div>
+                        
                         <div class="portfolio-item">
                             <img src="img/portfolio-2.png" alt="">
                             <div class="portfolio-layer">
@@ -153,7 +182,7 @@
                                 <p>Development and publishing of a Wordpress website 
                                     with a custom theme as part of my Final Project 
                                     to obtain the Systems Engineering degree.</p>
-                                <a href="https://meridasmartapp.000webhostapp.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://appmeridasmart.000webhostapp.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
                         </div>
                         <div class="portfolio-item">
@@ -187,9 +216,8 @@
                             <img src="img/portfolio-6.png" alt="">
                             <div class="portfolio-layer">
                                 <h3>Website: Dance company</h3>
-                                <p>Development and publishing of a Wordpress website with custom-made theme and templates, custom post types 
-                                    and Woocommerce sales system. According to the provided design and 
-                                    information by the client.</p>
+                                <p>Development of a custom-made Wordpress website, with custom theme, templates, post types 
+                                    and Woocommerce sales system. According to information by the client.</p>
                                 <a href="https://507dancecamp.net" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
                         </div>
@@ -199,28 +227,38 @@
             </div>
         </div>
     </section>
-    <svg class="separator separator--up separator-4" width="100%" height="100%" viewBox="0 0 100 10" preserveAspectRatio="none"> 
+    <svg class="separator separator-4" width="100%" height="100%" viewBox="0 0 100 10" preserveAspectRatio="none"> 
         <path 
-            class="path-anim separator__path" 
-            data-path-to="M 0 0 C 17 21.6 35.2 1.2 50 1.4 C 65.2 1.5 83 21.6 100 0 L 0 0 Z" 
-            vector-effect="non-scaling-stroke" 
-            d="M 0 0 C 23 0 35 0 50 0 C 65 0 74 0 100 0 L 0 0 Z">
-        </path> </svg>
-    <section class="contact" id="contact">
+            class="path-anim"
+            d="M 0 0 C 40 0 60 0 100 0 L 0 0 Z"
+            data-path-to="M 0 0 C 40 10 60 10 100 0 L 0 0 Z" 
+            vector-effect="non-scaling-stroke"> 
+        </path> 
+    </svg>
+    <section class="contact parallax-wrapper" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 center contact-data" data-scroll>
                     <h2>Contact</h2>
                 </div>
                 <div class="col-md-12 contact-buttons center contact-data" data-scroll>
-                    <a class="btn" href="tel:+584125133848" role="button"><i class="fa-solid fa-mobile-screen"></i></a>
                     <a class="btn" href="mailto:golfredof@gmail.com" role="button"><i class="fa-solid fa-envelope"></i></a>
                     <a class="btn" href="https://www.linkedin.com/in/golfredof" target="_blank" role="button"><i class="fa-brands fa-linkedin"></i></a>
-                </div>    
+                    <a class="btn" href="./docs/Golfredo-Flores-CV.pdf" target="_blank" role="button"><i class="fa-solid fa-file-arrow-down"></i></a>
+                </div>
             </div>
         </div>
-        <img src="img/letters2.png" class="letters2 rellax" data-rellax-speed="4" data-rellax-percentage="0.5">
+        <img src="img/polygon3.png" class="rellax polygon3" data-rellax-speed="-2" data-rellax-percentage="0.5">
+        <img src="img/polygon4.png" class="rellax polygon4" data-rellax-speed="3" data-rellax-percentage="0.5">
+        <img src="img/lowpoly-face-2.png" class="contact-img">
+        <img src="img/letters2.png" class="letters2 rellax" data-rellax-speed="3" data-rellax-percentage="0.5">
     </section>
+    <footer class="footer-bg">
+        <p class="center">
+          Copyright &copy
+          <a class="text-dark" href="https://golfredof.github.io/">Golfredo Flores</a>
+        </p>
+      </footer>
     <script src="script.js"></script>
 </body>
 </html>
