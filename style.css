@@ -741,7 +741,23 @@ user-select: none;
     fill: #3D554D;
 }
 
-@media screen and (max-width: 575px){
+@media screen and (max-width: 767px) and (max-height: 645px) {
+
+    .banner, .about, .what-do, .portfolio, .contact{
+        min-height: 150vh;
+    }
+
+    .scrolldown-wrapper{
+        bottom: -45%;
+    }
+
+    .portfolio-list{
+        grid-gap: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 767px){
 
     h1{
         font-size: 3.5em !important;
@@ -753,6 +769,8 @@ user-select: none;
     h3 {
         font-size: 2em !important;
     }
+
+
 
     .about h2{
         margin-top: 25%;
@@ -792,7 +810,7 @@ user-select: none;
 
     .banner-text, .banner-img-group {
         text-align: center;
-        margin-top: -10vh !important;
+        margin-top: -15vh !important;
     }
 
     .center-button{
