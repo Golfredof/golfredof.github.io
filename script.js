@@ -1,3 +1,19 @@
+// Loader
+
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+    loader.classList.add("loader-hidden");
+    loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader);
+    });
+});
+/*
+const logo = document.querySelectorAll("#logo path");
+
+for(let i=0; i<logo.length; i++){
+    console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
+}
+*/
 // Menu animation
 
 var icon = document.getElementById("hamb-icon");

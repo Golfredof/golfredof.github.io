@@ -67,6 +67,67 @@ p{
     font-size: 1em !important;
 }
 
+/* Screen Loader */
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-color: #383535;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+  
+
+#logo path:nth-child(1){
+    stroke-dasharray: 364;
+    stroke-dashoffset: 364;
+    animation: line-anim 1.8s ease forwards infinite alternate, 
+                fill-white 1.8s ease forwards 0.5s infinite alternate;
+
+}
+
+#logo path:nth-child(2){
+    stroke-dasharray: 252;
+    stroke-dashoffset: 252;
+    animation: line-anim 1.8s ease forwards infinite alternate,  
+                fill-blue 1.8s ease forwards 0.5s infinite alternate;
+}
+
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill-white{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill:#FFFFFF;
+    }
+
+}
+
+@keyframes fill-blue{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill:#437E6C;
+    }
+}
 
 /* Menu Hamburger */
 
@@ -747,8 +808,8 @@ user-select: none;
         min-height: 180vh;
     }
 
-    .scrolldown-wrapper{
-        bottom: -60%;
+    .scrolldown{
+        display: none;
     }
 
     .portfolio-list{
