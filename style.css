@@ -689,6 +689,7 @@ user-select: none;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+    pointer-events: none;
 }
 
 .portfolio-layer{
