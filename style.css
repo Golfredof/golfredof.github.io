@@ -828,7 +828,7 @@ user-select: none;
     display: block;
     position: absolute;
     left: 20%;
-    z-index: 1000 !important;
+    z-index: 500 !important;
     height: 7vh;
     padding-top: 2vh;
 }

@@ -97,23 +97,67 @@ function reveal(){
         opacity: 0, duration: 0.8, y: 100, delay: 1
     });
 
-    gsap.from('.title', {
-        scrollTrigger:{
-            trigger: ".about"
-        }, opacity: 0, duration: 0.8, y: -100
-    });
-
-    gsap.from('.text', {
+    gsap.from('.title1', {
         scrollTrigger:{
             trigger: ".about",
-        }, opacity: 0, duration: 0.8, x: -100
+        }, opacity: 0, duration: 0.8, y: -100, delay: 0.3
+    });
+
+    gsap.from('.text1', {
+        scrollTrigger:{
+            trigger: ".about",
+        }, opacity: 0, duration: 0.8, x: -100, delay: 0.3
     });
     
     gsap.from('.profile-photo', {
         scrollTrigger:{
             trigger: ".about"
-        }, opacity: 0, duration: 0.8, x: 100
+        }, opacity: 0, duration: 0.8, x: 100, delay: 0.3
     });
+
+    gsap.from('.title2', {
+        scrollTrigger:{
+            trigger: ".what-do"
+        }, opacity: 0, duration: 0.8, y: -100, delay: 0.3
+    });
+
+    gsap.from('.text2', {
+        scrollTrigger:{
+            trigger: ".what-do",
+        }, opacity: 0, duration: 0.8, x: 100, delay: 0.3
+    });
+
+    gsap.from('.center-button', {
+        scrollTrigger:{
+            trigger: ".what-do"
+        }, opacity: 0, duration: 0.8, y: 100, delay: 0.3
+    });
+
+    gsap.from('.portfolio-title', {
+        scrollTrigger:{
+            trigger: ".portfolio",
+        }, opacity: 0, duration: 0.8, y: -100, delay: 0.3
+    });
+
+    gsap.from('.portfolio-list', {
+        scrollTrigger:{
+            trigger: ".portfolio",
+        }, opacity: 0, duration: 0.8, y: 100, delay: 0.3
+    });
+
+    gsap.from('.title4', {
+        scrollTrigger:{
+            trigger: ".contact",
+        }, opacity: 0, duration: 0.8, y: -100, delay: 0.3
+    });
+
+    gsap.from('.contact-buttons', {
+        scrollTrigger:{
+            trigger: ".contact",
+        }, opacity: 0, duration: 0.8, x: 100, delay: 0.3
+    });
+
+    
 }
 // Type effect
 
