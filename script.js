@@ -6,6 +6,8 @@ window.addEventListener("load", () => {
     loader.addEventListener("transitionend", () => {
         loader.remove();
     });
+    reveal();
+    
 });
 /*
 const logo = document.querySelectorAll("#logo path");
@@ -79,6 +81,40 @@ var sticky2 = hamburgerIcon.offsetTop;
         }
     }
 
+// Reveal animation
+
+function reveal(){
+
+    gsap.from('.banner-img-group', {
+        opacity: 0, duration: 0.8, y: -100
+    });
+
+    gsap.from('.banner-text', {
+        opacity: 0, duration: 0.8, x: 100, delay: 1
+    });
+
+    gsap.from('.banner-buttons', {
+        opacity: 0, duration: 0.8, y: 100, delay: 1
+    });
+
+    gsap.from('.title', {
+        scrollTrigger:{
+            trigger: ".about"
+        }, opacity: 0, duration: 0.8, y: -100
+    });
+
+    gsap.from('.text', {
+        scrollTrigger:{
+            trigger: ".about",
+        }, opacity: 0, duration: 0.8, x: -100
+    });
+    
+    gsap.from('.profile-photo', {
+        scrollTrigger:{
+            trigger: ".about"
+        }, opacity: 0, duration: 0.8, x: 100
+    });
+}
 // Type effect
 
 var typed = new Typed(".auto-type", {
@@ -115,9 +151,3 @@ paths.forEach(el => {
 
 var rellax = new Rellax('.rellax');
 rellax.refresh();
-
-// Scrollout
-
-ScrollOut({
-    threshold: .6
-})
