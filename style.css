@@ -24,6 +24,7 @@ html {
   }
 
 body {
+    background: #383535 !important;
     min-height: 100vh;
     max-width: 100%;
     margin: 0 auto;
@@ -793,30 +794,10 @@ user-select: none;
     right: 20%;
 }
 
-.polygon3 {
-    position: absolute;
-    right: 12%;
-    bottom: 20%;
-    max-width: 400px;
-    height: auto;
-    z-index: 100;
-    pointer-events: none;
-}
-
-.polygon4 {
-    position: absolute;
-    right: 40%;
-    bottom: 15%;
-    max-width: 400px;
-    height: auto;
-    z-index: 100;
-    pointer-events: none;
-}
-
 .letters2 {
     position: absolute;
     right: 30px;
-    bottom: 40px;
+    bottom: 0px;
     max-height: 80%;
     width: auto;
     z-index: 100 !important;
@@ -912,9 +893,7 @@ user-select: none;
     .banner-img, 
     .contact-img, 
     .polygon1, 
-    .polygon2, 
-    .polygon3, 
-    .polygon4{
+    .polygon2{
         max-width: 250px;
     }
 
@@ -925,16 +904,6 @@ user-select: none;
     .polygon2{
         right: 5%;
         bottom: -10%;
-    }
-
-    .polygon3{
-        right: 45%;
-        bottom: 30%;
-    }
-
-    .polygon4{
-        right: 65%;
-        bottom: 35%;
     }
 
     .banner-img-group {
@@ -949,6 +918,8 @@ user-select: none;
 
     .center-button{
         text-align: center;
+        position: relative;
+        z-index: 200;
     }
 
     .portfolio-layer h3 {
@@ -1004,7 +975,7 @@ user-select: none;
     .letters2{
         max-height: 70% !important;
         z-index: 0;
-        bottom: 55px;
+        bottom: 40px;
     }
 
     .footer-bg p{
