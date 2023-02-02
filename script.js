@@ -162,7 +162,7 @@ function reveal(){
 // Type effect
 
 var typed = new Typed(".auto-type", {
-    strings: ["developer", "3d modeler", "foodie", "geek"],
+    strings: ["Web developer", "3d modeler", "foodie", "IT geek"],
     typeSpeed: 80,
     backSpeed: 80,
     loop: true
