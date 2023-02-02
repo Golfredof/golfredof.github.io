@@ -797,8 +797,8 @@ user-select: none;
 .letters2 {
     position: absolute;
     right: 30px;
-    bottom: 0px;
-    max-height: 80%;
+    bottom: 80px;
+    max-height: 60%;
     width: auto;
     z-index: 100 !important;
 }
@@ -973,9 +973,9 @@ user-select: none;
     }
 
     .letters2{
-        max-height: 70% !important;
+        max-height: 55% !important;
         z-index: 0;
-        bottom: 40px;
+        bottom: 80px;
     }
 
     .footer-bg p{
