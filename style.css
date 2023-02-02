@@ -975,7 +975,7 @@ user-select: none;
     .letters2{
         max-height: 55% !important;
         z-index: 0;
-        bottom: 80px;
+        bottom: 50px;
     }
 
     .footer-bg p{
