@@ -769,6 +769,7 @@ user-select: none;
 
 .contact-data{
     z-index: 120 !important;
+    margin-top: 40px !important;
 }
 
 .contact a{
