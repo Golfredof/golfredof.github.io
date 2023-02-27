@@ -151,10 +151,16 @@ function reveal(){
         }, opacity: 0, duration: 0.8, y: -100, delay: 0.3
     });
 
-    gsap.from('.contact-buttons', {
+    gsap.from('.text4', {
         scrollTrigger:{
             trigger: ".contact",
         }, opacity: 0, duration: 0.8, x: 100, delay: 0.3
+    });
+
+    gsap.from('.contact-buttons', {
+        scrollTrigger:{
+            trigger: ".contact",
+        }, opacity: 0, duration: 0.8, y: 100, delay: 0.3
     });
 
     
