@@ -131,6 +131,12 @@ function reveal(){
         }, opacity: 0, duration: 0.8, y: -100, delay: 0.3
     });
 
+    gsap.from('.text3', {
+        scrollTrigger:{
+            trigger: ".portfolio",
+        }, opacity: 0, duration: 0.8, x: 100, delay: 0.3
+    });
+
     gsap.from('.portfolio-list', {
         scrollTrigger:{
             trigger: ".portfolio",
@@ -160,7 +166,7 @@ function reveal(){
 // Type effect
 
 var typed = new Typed(".auto-type", {
-    strings: ["Web developer", "3d modeler", "foodie", "IT geek"],
+    strings: ["Web developer", "Systems engineer", "3d modeler", "foodie", "IT geek"],
     typeSpeed: 80,
     backSpeed: 80,
     loop: true

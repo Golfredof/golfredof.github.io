@@ -744,6 +744,10 @@ user-select: none;
     height: 100%;
 }
 
+.tags{
+    color: #46967E;
+}
+
 .contact{
     width: 100%;
     min-height: 100vh;
